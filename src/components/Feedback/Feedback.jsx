@@ -1,16 +1,16 @@
 
 import React from 'react';
-import css from  './Feedback.module.css'
+import css from './Feedback.module.css'
 import Statistics from 'components/Statistics';
 
-class Feedback extends React.Component{
+class Feedback extends React.Component {
   state = {
-  good: 0,
-  neutral: 0,
-  bad: 0
-}
+    good: 0,
+    neutral: 0,
+    bad: 0
+  }
 
-   handleOnClick = e => {
+  handleOnClick = e => {
     return this.setState(prevState => ({
       ...prevState,
       [e.target.name]: prevState[e.target.name] + 1,
@@ -33,7 +33,6 @@ class Feedback extends React.Component{
             Bad
           </button>
         </div>
-
         <Statistics state={this.state} />
       </>
     );
