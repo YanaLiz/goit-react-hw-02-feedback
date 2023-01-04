@@ -1,11 +1,13 @@
+
 import React from 'react'
-import Feedback from './Feedback/Feedback';
+import Section from './Feedback';
 
 export const App = () => {
   return (
     <div>
-      <Feedback />
+      <Section title="Please live feedback" />
     </div>
   );
 };
+
 
