@@ -12,3 +12,8 @@
     width: 300px;
     padding: 10px;
 }
+
+.list {
+    display: flex;
+    text-decoration: none;
+}
